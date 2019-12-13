@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 如果让一个View直接添加子控件 是不允许的  此时 应该直接使用ViewGroup控件 -->
+    <ViewGroup
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#F00" >
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#0F0" />
+    </ViewGroup>
+
+</LinearLayout>

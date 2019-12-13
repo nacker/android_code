@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- hint 里面放提示的文本 -->
+	<!-- text输入的文本 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入xxx"
+        android:text="haha"  />
+    <!-- editable 决定用户能否输入 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入xxx"
+        android:editable="false"
+        android:text="haha"  />
+    <!-- maxLength最大输入的数字长度 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLength="10"
+        android:hint="请输入xxx"  />
+    <!-- inputType设置输入的风格  textPassword代表密码 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:inputType="textEmailAddress"
+        android:maxLength="10"
+        android:hint="请输入xxx"  />
+
+</LinearLayout>

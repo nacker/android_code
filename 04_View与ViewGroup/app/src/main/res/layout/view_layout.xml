@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- android:visibility 用来显示/隐藏控件 -->
+    <!-- visible可见   gone/invisible 不可见 -->
+    <!-- gone真实不可见 也不占据位置   invisible不可见 但占位置-->
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0F"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0F"
+        android:visibility="gone" />
+
+    <!-- <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0F"
+        android:visibility="invisible" /> -->
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0F"
+        android:visibility="visible" />
+    
+
+</LinearLayout>

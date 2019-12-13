@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36sp"
+        android:textColor="#F0F"   />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36sp"
+        android:textColor="#F0F"
+        android:textStyle="bold"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36sp"
+        android:textColor="#F0F"
+        android:textStyle="italic"  />
+    <!-- 
+    	android:ellipsize="end" 尾部加上省略号 没有完全显示的时候才有省略号
+    	android:lines="2"  控制行数
+     -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="sdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsf" />
+    <!-- singleLine 变成单行 附带省略号 -->
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="sdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsfsdfsfdsfsdfsdfdsfdsf" />
+    <!-- typeface 设置字体风格 -->
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="abc123" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:text="abc123" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:typeface="serif"
+        android:text="abc123" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:typeface="monospace"
+        android:text="abc123" />
+
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Button" />
+	<!-- 1.把Button变成TextView -->
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@null"
+	    android:text="Button" />
+	<!-- 2.把TextView变成Button -->
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:onClick="myClick"
+	    android:text="Button" />
+	
+</LinearLayout>

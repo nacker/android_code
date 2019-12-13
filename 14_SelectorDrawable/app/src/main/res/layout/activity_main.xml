@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@drawable/btn_txt_selector"
+        android:text="@string/hello_world" />
+	<!-- CheckBox里面的选择框样式是由属性android:button决定的 -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/cbx_slector"
+        android:text="苹果" />
+
+</LinearLayout>

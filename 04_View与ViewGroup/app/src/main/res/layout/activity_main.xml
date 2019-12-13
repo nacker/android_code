@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- android:layout_width 宽度 -->
+    <!-- android:layout_height 高度 -->
+    <!-- 100dp固定值 -->
+    <!-- wrap_content控件内部多大 宽高就有多大 -->
+    <!-- match_parent占满父窗体 -->
+    <!--
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"   />
+    -->
+
+
+    <!-- android:background 填充颜色值 填充图片 -->
+    <!--
+         <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_launcher" />
+    -->
+
+
+    <!-- 光的三原色 红绿蓝  范围分别的0~F 用3/6位来表示的颜色 -->
+    <!--
+         <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#F0F" />
+    -->
+
+
+    <!--
+         <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF00FF" />
+    -->
+
+
+    <!-- 最前两位代表透明度 -->
+    <!--
+         <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#88FF0000" />
+    -->
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#8F00" />
+
+</RelativeLayout>

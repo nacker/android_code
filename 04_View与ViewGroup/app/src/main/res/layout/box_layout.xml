@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- margin 外边距 让控件在原来的位置上做一个微调 -->
+    <!--
+    	layout_marginLeft="10dp"
+        layout_marginTop="20dp"		layout_marginBottom="20dp"
+		layout_marginRight="20dp"
+		4条边都有的
+		layout_margin="20dp"  	-->
+    
+    <!--
+         <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_co        
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#F00"
+        android:text="TextView" />
+    -->
+	
+	<!-- 
+		内边距 会增加View的宽高
+		paddingLeft="30dp"
+        paddingRight="10dp"
+        paddingBottom="50dp"
+        paddingTop="50dp"
+        padding="50dp"
+	 -->
+	  
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F00"
+        android:padding="20dp"
+        android:text="TextView" />
+
+</LinearLayout>

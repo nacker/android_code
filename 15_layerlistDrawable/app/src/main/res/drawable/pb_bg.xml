@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 进度条:背景图 进度图 -->
+	<item android:drawable="@drawable/progress_bar_bg" 
+	    android:id="@android:id/background"/>
+	<item android:drawable="@drawable/progress_bar_selected_bg" 
+	    android:id="@android:id/progress"/>
+</layer-list>

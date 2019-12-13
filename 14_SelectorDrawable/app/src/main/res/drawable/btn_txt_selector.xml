@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 如果设置的是字体的颜色 这里不应该使用android:drawable属性 而应该使用android:color -->
+    <item android:state_pressed="true" android:color="#FFF"/>
+    <item android:color="#F000"/>
+
+</selector>
