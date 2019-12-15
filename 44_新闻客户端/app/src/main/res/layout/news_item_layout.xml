@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"  >
+
+        <com.m520it.newsclient.ui.ImageViewWithUrl
+            android:id="@+id/news_iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/news_iv"
+            android:layout_toRightOf="@+id/news_iv"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title_tv"
+            android:layout_below="@id/title_tv"
+            android:ellipsize="end"
+            android:lines="2" />
+
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/desc_tv"
+            android:layout_marginRight="5dp"
+            android:textColor="#F00" />
+    </RelativeLayout>
+
+</RelativeLayout>
