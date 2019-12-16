@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+    <TextView
+        style="@style/text_style"
+        android:text="hello_world" />
+    <TextView
+        style="@style/text_style"
+        android:text="wenzi" />
+    <TextView
+        style="@style/text_style"
+        android:text="hello_world" />
+    <TextView
+        style="@style/text_style"
+        android:text="hello_world" />
+    
+    <TextView
+        style="@style/wrap_content_style"
+        android:text="hello_world" />
+
+    <TextView
+        android:layout_width="@dimen/textview_width"
+        android:layout_height="@dimen/textview_width"
+        android:background="@color/text_bg_color"
+        android:text="hello_world" />
+    
+    
+
+</LinearLayout>
