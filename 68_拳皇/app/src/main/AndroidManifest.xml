@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devlei.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 横竖屏切换对生命周期产生影响 -->
+        <!-- android:screenOrientation强制界面的方向 -->
+        <!-- landscape横屏   portrait竖屏-->
+        <!-- configChanges 设置横竖屏切换对界面的生命周期不影响 -->
+        <!-- android:configChanges="orientation|screenSize|keyboardHidden" -->
+        <!-- 告诉系统 忽略掉 横竖屏切换 屏幕大小变化 键盘被隐藏的时候对生命周期的影响 -->
+        <!-- 模拟器切换横竖屏 Ctrl+F11 -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+    <Button
+        android:id="@+id/male_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="男" />
+    <Button
+        android:id="@+id/female_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女" />
+    <Button
+        android:id="@+id/unknown_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人妖" />
+
+</LinearLayout>

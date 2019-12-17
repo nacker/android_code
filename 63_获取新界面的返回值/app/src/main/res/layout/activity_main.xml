@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chooseIcon"
+        android:text="请选择您的头像" />
+	<ImageView 
+	    android:id="@+id/icon_iv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" />
+	<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chooseSex"
+        android:text="请选择您的性别" />
+	<TextView 
+	    android:id="@+id/sex_tv"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devlei.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.devlei.demo.MyActivity"
+            android:label="@string/title_activity_my" >
+            <intent-filter>
+                <action android:name="com.devlei.demo.action.HAHA" />
+                <!--    如果在Activity配置了一个或者多个 ACTION 必须再配置一个category标签 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.devlei.demo.MySecActivity"
+            android:label="@string/title_activity_my_sec" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- http://www.baidu.com:8080/android       text/html-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 如果配置了data 就必须配置一个action 不管action有没用到 -->
+                <data android:mimeType="text/html"
+                    android:scheme="http" android:host="www.baidu.com" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

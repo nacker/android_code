@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">demo</string>
+
+    <string name="title_activity_my">MyActivity</string>
+</resources>
