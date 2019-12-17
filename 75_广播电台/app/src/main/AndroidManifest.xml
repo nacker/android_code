@@ -16,17 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name="com.devlei.demo.MyActivity"
-            android:label="title_activity_my" >
-            <intent-filter >
-                <!-- 吃饭 -->
-                <action android:name="com.devlei.demo.intent.action.NEWACTIVITY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
     </application>
 
 </manifest>

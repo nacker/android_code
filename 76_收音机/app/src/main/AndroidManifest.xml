@@ -17,15 +17,11 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.devlei.demo.MyActivity"
-            android:label="title_activity_my" >
-            <intent-filter >
-                <!-- 吃饭 -->
-                <action android:name="com.devlei.demo.intent.action.NEWACTIVITY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+        <receiver android:name="com.devlei.demo.Radio">
+            <intent-filter>
+                <action android:name="com.devlei.demo.action.SENDRADIO"/>
             </intent-filter>
-        </activity>
+        </receiver>
 
     </application>
 
