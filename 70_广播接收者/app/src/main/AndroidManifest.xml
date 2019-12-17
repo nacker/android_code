@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devlei.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2.通电  -->
+        <receiver android:name="com.devlei.demo.PhoneReceiver">
+            <!-- 3.调频   4大组件除了AC的action标签需要category属性外 其他的不需要-->
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <!-- 电话外拨可能涉及到用户的隐私  -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+</manifest>

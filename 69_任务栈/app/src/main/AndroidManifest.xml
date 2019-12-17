@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devlei.demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<!--        <activity android:name=".MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity
+            android:name="com.devlei.demo.AActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- standard默认的模式 以栈的形式存储到应用容器中 -->
+        <!-- singleTop 如果该Activity在栈顶 就不会重新启动了 -->
+        <!--
+        	singleTask
+        	如果应用没有该AC 则直接创建
+        	如果发现该应用有AC 那么会删除配置了该模式的AC栈上面的所有AC 而且不会再次创建本身
+        -->
+        <!--
+        	singleInstance
+        	就是配置了该模式的AC 如果没有创建就自己创建一个容器并把AC放进去   "并把自己的容器提前"
+        	如果AC已经存在了  再次启动AC   "把自己的容器提前了"
+        	如果一个应用里面 BAC配置了该模式  此时B已经启动 此时B所在的容器提到最前
+        		此时如果有新的AC被启动  其他的容器会提前 并在最前面的容器里添加该新的AC
+         -->
+        <activity
+            android:name="com.devlei.demo.BActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+        </activity>
+    </application>
+
+</manifest>
